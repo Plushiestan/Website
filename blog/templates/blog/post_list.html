@@ -1,14 +1,11 @@
-<html>
-    <head>
-        <title>Fluffy's Blog</title>
-    </head>
-    <body>
+{% extends 'blog/base.html' %}
+
+{% block blogcontent %}
       {% for post in posts %}
           <div>
-              <p>published: {{ post.published_date }}</p>
               <h2><a href="">{{ post.title }}</a></h2>
-              <p>{{ post.text|linebreaksbr }}</p>
+              <p class="pdate">published: {{ post.published_date }}</p>
+              <p>{{ post.text|linebreaksbr }}</p><br>
           </div>
       {% endfor %}
-    </body>
-</html>
+{% endblock %}
