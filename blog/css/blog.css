@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h1 a, h2 a {
+  color: #C25100; cursive;
+  font-family: 'Lobster';
+}
+
+div {
+  margin-left:3%;
+  margin-right:3%;
+}
+
+.page-header {
+  font-style: bold;
+  text-align: center;
+}
+
+.pdate {
+  font-size: smaller;
+}
+
+.content-container {
+  border-color: #C25100;
+  border-width: 3px;
+  border-style: dotted;
+}
