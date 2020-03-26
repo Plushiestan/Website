@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 #securitykeyfile = os.path.join(BASE_DIR, '..', 'secret_key.txt')
-securitykeyfile = os.path.join(BASE_DIR, 'secret_key.txt')
+securitykeyfile = os.path.join(BASE_DIR, '..', 'secret_key.txt')
 with open(securitykeyfile) as f:
 	SECRET_KEY = f.read().strip()
 
