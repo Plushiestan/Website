@@ -1,0 +1,23 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Login to Plushiestan</h1>
+<p>This allows you to personalize your calendar.</p><br>
+<p>Please note: This is NOT your Instagram account. Please create a Plushiestan account if you haven't done yet.</p>
+
+<form method="POST"> 
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Log in">
+<p>Don't have an account? Register <a href="/accounts/register">here</a></p><br>
+
+</form>
+
+
+
+
+
+{% endblock %}
+
+

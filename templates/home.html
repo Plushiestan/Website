@@ -1,0 +1,14 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome to Plushiestan!</h1>
+
+{% if request.user.is_authenticated %}
+<p>Welcome back, {{ request.user }}!</p>
+{% else %}
+<p>Feel free to browse around, or log in to manage your personal event calendar!</p>
+{% endif %}
+
+
+{% endblock %}

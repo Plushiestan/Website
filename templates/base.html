@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <title>Plushiestan</title>
+  <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+  <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" >
+  <link href="{% static 'bootstrap-responsive.min.css' %}" rel="stylesheet" type="text/css" media="all" >
+  <!--script src="{% static 'bootstrap.min.js' %}"></script-->
+</head>
+
+
+<body class=" ">
+    {% include "nav.html" %}
+
+    {% block content %}
+    replace me
+    {% endblock %}
+</body>
+</html>

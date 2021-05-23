@@ -1,0 +1,18 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Event Create</h1>
+<p>Is there a hashtag we should know about? Enter it here, and after reviewing it, we will add it to the database.</p>
+
+<form method="POST"> {% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit Hashtag">
+</form>
+
+
+
+
+{% endblock %}
+
+

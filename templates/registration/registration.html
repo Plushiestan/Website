@@ -1,0 +1,27 @@
+{%extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %} 
+
+<h1>Register at Plushiestan</h1>
+<p>This allows you to personalize your calendar.</p>
+
+<form method="POST" class="form-group"> 
+{% csrf_token %}
+{{ form|crispy }}
+<p>Choose a unique password. Please do NOT use your Instagram password. Never enter your Instagram password into any other app or website, because this can lead to scammers taking over your account. <br>- Love, Fluffy's Mom &hearts;</p>
+
+<!--input type="submit" value="Register"-->
+<button type="submit" class="btn btn-success">Register</button>
+
+<p>Already have an account? Log in <a href="/accounts/login">here</a></p>
+
+</form>
+
+
+
+
+
+{% endblock %}
+
+

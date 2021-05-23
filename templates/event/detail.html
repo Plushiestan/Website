@@ -1,0 +1,12 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Event Detail</h1>
+<h2>{{ data.hashtag|title }}</h2>
+<p>Organizer: {{ data.organizer }}</p>
+{%if data.startDate %} <p> Starts: {{ data.startDate }} </p> {% endif %} 
+
+{% endblock %}
+
+

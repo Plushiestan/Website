@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>eventView Template</h1>
+{{ request.user }}
+
+<p>{{ meineVariable }}</p>
+
+<ul>
+{% for x in meineListe %}
+    <li>  {{ forloop.counter }} - {{ x }} </li>
+{% endfor %}
+</ul>
+
+
+{% endblock %}
